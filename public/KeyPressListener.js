@@ -23,5 +23,8 @@ class KeyPressListener {
     document.removeEventListener("keyup", this.keyupFunction);
   }
 
-
+  bind() {
+   document.addEventListener("keydown", this.keydownFunction);
+   document.addEventListener("keyup", this.keyupFunction);
+  }
 }
